@@ -26,7 +26,12 @@ def generateNums():
 
 while x < d:
   generateNums()
-  print(f"your numbers are {megaBuckNums}")
+  printed_nums = ""
+  for numbs in megaBuckNums:
+    printed_nums = printed_nums + str(numbs) + " ,"
+
+  #cdprint(f"your numbers are {megaBuckNums}")
+  print(f"your numbers are {printed_nums}")
   x += 1 
   megaBuckNums= []
  
