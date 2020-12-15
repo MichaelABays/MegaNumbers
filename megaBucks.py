@@ -1,15 +1,18 @@
 
-
+import os
 import random
+from art import logo
+
 
 megaBuckNums= []
 megaNumberGenerated = 0
 x = 0
 
 
+print(logo)
+
+
 d = int(input('How Many Lines of megabucks do you want to play?'))
-
-
 
 
 def generateNums():
@@ -34,7 +37,8 @@ while x < d:
   print(f"your numbers are {printed_nums}")
   x += 1 
   megaBuckNums= []
- 
 
+ 
+print("Do you like these numbers?")
 
 
