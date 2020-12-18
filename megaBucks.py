@@ -31,14 +31,18 @@ while x < d:
   generateNums()
   printed_nums = ""
   for numbs in megaBuckNums:
-    printed_nums = printed_nums + str(numbs) + " ,"
+    printed_nums = printed_nums + str(numbs) + ", "
+      
 
-  #cdprint(f"your numbers are {megaBuckNums}")
-  print(f"your numbers are {printed_nums}")
-  x += 1 
-  megaBuckNums= []
+    #cdprint(f"your numbers are {megaBuckNums}")
+    print(f"your numbers are {printed_nums}")
+    x += 1 
+    megaBuckNums= []
 
  
-print("Do you like these numbers?")
-
+go_again = input("Do you like these numbers? Yes or No: ").lower()
+if go_again == "yes":
+  print("Good Luck!!!")
+else:
+   generateNums()
 
